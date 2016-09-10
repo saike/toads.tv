@@ -1,0 +1,10 @@
+{
+  "name": "toads.tv",
+  "version": "0.0.1",
+  "description": "video toad service",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "saike <kishkoglot@gmail.com>",
+  "license": "MIT"
+}
