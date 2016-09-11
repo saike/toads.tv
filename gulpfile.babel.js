@@ -12,12 +12,6 @@ const paths = {
   destination: './app'
 };
 
-let b = 10;
-
-let c = b*10;
-
-return b+c;
-
 gulp.task('default', (callback) => {
   run("server", "build", "watch", callback);
 });
