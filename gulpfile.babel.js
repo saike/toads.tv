@@ -4,13 +4,15 @@ import rimraf from 'rimraf';
 import run from 'run-sequence';
 import watch from 'gulp-watch';
 import server from 'gulp-live-server';
-
-//hello
+import fs from 'fs';
 
 const paths = {
+  config: './config/',
   js: [ './src/**/*.js' ],
   destination: './app'
 };
+
+const CONFIG = JSON.parse(fs.readFileSync(paths.config + 'config.json'));
 
 gulp.task('default', (callback) => {
   run("server", "build", "watch", callback);
@@ -21,6 +23,8 @@ gulp.task('build', (callback) => {
 });
 
 gulp.task('clean', (callback) => {
+  var a = 0;
+  a += 10;
   rimraf(paths.destination, callback);
 });
 

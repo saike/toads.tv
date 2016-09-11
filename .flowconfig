@@ -2,6 +2,7 @@
 .*/node_modules/babel*
 .*/node_modules/babylon*
 .*/app/.*
+.*/config/.*
 [include]
 [libs]
 [options]
